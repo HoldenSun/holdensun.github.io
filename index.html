@@ -29,8 +29,13 @@
         background-size: cover;
         background-attachment: fixed;
         color: #000;
-        bakcground:rgba(68, 68, 68, 0.5);
+        
       }
+        .cover {
+            background:rgba(68,68,68,0.5);
+            position:relative;
+            z-index:800;
+        }
       .container {
           width : 1000px;
           height : 800px;
@@ -64,11 +69,13 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="head"></div>
-        <div class="wrap flx">
-          <div class="left"></div>
-          <div class="main"></div>
+    <div class="cover">
+        <div class="container">
+            <div class="head"></div>
+            <div class="wrap flx">
+              <div class="left"></div>
+              <div class="main"></div>
+            </div>
         </div>
     </div>
 </body>
